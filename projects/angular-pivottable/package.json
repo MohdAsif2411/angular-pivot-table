@@ -1,12 +1,35 @@
 {
   "name": "angular-pivottable",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.0",
+  "description": "Angular wrappers for react-pivottable (PivotTable and PivotTableUI) — React 17",
+  "author": "Mohd Asif",
+  "main": "bundles/angular-pivottable.umd.js",
+  "module": "fesm2015/angular-pivottable.mjs",
+  "types": "angular-pivottable.d.ts",
+  "style": "src/styles/pivottable.css",
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-pivottable": "^0.11.0"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
   },
-  "sideEffects": false
+  "dependencies": {},
+  "files": [
+    "bundles",
+    "fesm2015",
+    "esm2015",
+    "src",
+    "README.md"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

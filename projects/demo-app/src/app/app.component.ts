@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NgPivotTableUiComponent } from 'angular-pivottable';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [NgPivotTableUiComponent]
 })
 export class AppComponent {
-  title = 'demo-app';
+  data = [
+    ['attribute', 'value'],
+    ['a', 1],
+    ['b', 2]
+  ];
+
+  onConfigChange(cfg: any) {
+    console.log('pivot config', cfg);
+  }
 }

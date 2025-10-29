@@ -14,7 +14,9 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 // Import the React components (React 17)
-const PivotTableUI = require('react-pivottable/PivotTableUI').default || require('react-pivottable/PivotTableUI');
+// const PivotTableUI = require('react-pivottable/PivotTableUI').default || require('react-pivottable/PivotTableUI');
+// @ts-ignore
+import PivotTableUI from 'react-pivottable/PivotTableUI';
 
 @Component({
   selector: 'ng-pivot-table-ui',
@@ -35,7 +37,7 @@ export class NgPivotTableUiComponent implements AfterViewInit, OnDestroy {
   private container!: HTMLElement;
   private state: any = {};
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef) { }
 
   ngAfterViewInit(): void {
     // container is the host element

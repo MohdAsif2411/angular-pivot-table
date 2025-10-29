@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import PivotTable CSS */
+@import "react-pivottable/pivottable.css";
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}

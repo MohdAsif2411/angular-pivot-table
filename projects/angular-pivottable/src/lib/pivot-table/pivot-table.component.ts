@@ -14,7 +14,9 @@ import * as ReactDOM from 'react-dom';
 // the "PivotTable" renderer import pattern depends how you use it.
 // react-pivottable exports PivotTable (basic) and several renderers via renderers module.
 // We'll import default pivot table usage:
-const PivotTable = require('react-pivottable').PivotTable || require('react-pivottable').default?.PivotTable;
+// const PivotTable = require('react-pivottable').PivotTable || require('react-pivottable').default?.PivotTable;
+// @ts-ignore
+import PivotTable from 'react-pivottable/PivotTable';
 
 @Component({
   selector: 'ng-pivot-table',

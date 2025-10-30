@@ -23,14 +23,31 @@
   },
   "dependencies": {},
   "files": [
-    "bundles",
-    "fesm2015",
-    "esm2015",
-    "src",
+    "dist",
+    "angular-pivottable",
+    "fesm2022",
+    "esm2022",
+    "lib",
+    "index.d.ts",
+    "package.json",
+    "public-api.d.ts",
     "README.md"
   ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "keywords": [
+    "ng-pivottable",
+    "pivottable",
+    "@asif-dev/ng-pivottable",
+    "PivotTable",
+    "PivotTableUI",
+    "angular",
+    "angular-pivottable",
+    "react",
+    "frontend",
+    "ui-components",
+    "asif"
+  ]
 }

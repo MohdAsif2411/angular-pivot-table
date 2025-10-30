@@ -1,2 +1,36 @@
-<ng-pivot-table-ui [data]="data" [rows]="['attribute']" [cols]="[]"
-  (configChange)="onConfigChange($event)"></ng-pivot-table-ui>
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <section class="demo-section">
+    <h2>Interactive Pivot Table UI</h2>
+    <p>Drag and drop fields to configure the pivot table</p>
+
+    <ng-pivot-table-ui
+      [data]="data"
+      [rows]="interactiveRows"
+      [cols]="interactiveCols"
+      [aggregatorName]="'Sum'"
+      (configChange)="onConfigChange($event)"
+      (stateChange)="onStateChange($event)">
+    </ng-pivot-table-ui>
+  </section>
+
+  <section class="demo-section">
+    <h2>Read-Only Pivot Table</h2>
+    <p>Pre-configured pivot table (no drag-and-drop)</p>
+
+    <ng-pivot-table
+      [data]="data"
+      [rows]="rows"
+      [cols]="cols"
+      [vals]="vals"
+      [aggregatorName]="aggregatorName"
+      [rendererName]="rendererName">
+    </ng-pivot-table>
+  </section>
+
+  <section class="demo-section config-display">
+    <h2>Current Configuration</h2>
+    <pre>{{ getConfigSummary() }}</pre>
+  </section>
+</div>

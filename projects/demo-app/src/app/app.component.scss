@@ -1,0 +1,52 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.demo-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+}
+
+.config-display {
+  background: #2d2d2d;
+
+  h2 {
+    color: #fff;
+  }
+
+  pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+// Import pivot table styles
+@import 'react-pivottable/pivottable.css';

@@ -1,6 +1,6 @@
 {
-  "name": "@asif-dev/ng-pivottable",
-  "version": "0.0.1",
+  "name": "my-workspace",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,6 +25,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.21",

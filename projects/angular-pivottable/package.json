@@ -22,17 +22,6 @@
     }
   },
   "dependencies": {},
-  "files": [
-    "dist",
-    "angular-pivottable",
-    "fesm2022",
-    "esm2022",
-    "lib",
-    "index.d.ts",
-    "package.json",
-    "public-api.d.ts",
-    "README.md"
-  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"

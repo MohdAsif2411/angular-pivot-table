@@ -1,5 +1,5 @@
 {
-  "name": "angular-pivottable",
+  "name": "@asif-dev/ng-pivottable",
   "version": "1.0.0-alpha.0",
   "description": "Angular wrappers for react-pivottable (PivotTable and PivotTableUI) — React 17",
   "author": "Mohd Asif",

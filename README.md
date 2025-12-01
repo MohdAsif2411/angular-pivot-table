@@ -118,7 +118,7 @@ export class AppComponent {
 
 ## ✨ Features
 
-- ✅ **Angular 18+ Compatible** - Uses latest Angular features
+- ✅ **Angular 18+ Compatible** - Works with Angular 18, 19, and future versions
 - ✅ **Standalone Components** - No NgModule required
 - ✅ **TypeScript Support** - Full type definitions
 - ✅ **SSR Compatible** - Works with Angular Universal
@@ -130,12 +130,12 @@ export class AppComponent {
 
 ## 🔧 Technologies
 
-- **Angular**: 18.0.0
-- **Node.js**: 20.x
+- **Angular**: 18.0.0+ (supports 18, 19, 20+)
+- **Node.js**: 18.x, 19.x, 20.x, 22.x
 - **React**: 17.0.2
 - **react-dom**: 17.0.2
 - **react-pivottable**: 0.11.0
-- **TypeScript**: 5.4.2
+- **TypeScript**: 5.4.2+
 
 ## 📝 Publishing
 

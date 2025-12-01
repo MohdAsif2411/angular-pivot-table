@@ -4,6 +4,9 @@
 
 This guide explains the refactoring done to make the Angular wrapper for react-pivottable more Angular-friendly and production-ready.
 
+**Target:** Angular 18 and above (18, 19, 20+)  
+**React:** 17.0.2 (required by react-pivottable 0.11.0)
+
 ## What Was Improved
 
 ### 1. **Proper Change Detection**

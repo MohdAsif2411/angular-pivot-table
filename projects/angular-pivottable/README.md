@@ -1,10 +1,12 @@
 # Angular PivotTable
 
-Angular 18+ wrapper components for [react-pivottable](https://github.com/plotly/react-pivottable), providing both interactive and read-only pivot table functionality in Angular applications.
+Angular wrapper components for [react-pivottable](https://github.com/plotly/react-pivottable), providing both interactive and read-only pivot table functionality in Angular applications.
+
+**Compatible with Angular 18 and above** (Angular 18, 19, 20+)
 
 ## Features
 
-- ✅ **Angular 18+ Compatible** - Built with latest Angular features (standalone components, inject function, signals-ready)
+- ✅ **Angular 18+ Compatible** - Works with Angular 18, 19, and future versions. Built with modern Angular features (standalone components, inject function, signals-ready)
 - ✅ **Standalone Components** - No NgModule needed, works with modern Angular apps
 - ✅ **SSR Compatible** - Platform checks ensure compatibility with Angular Universal
 - ✅ **TypeScript Support** - Full type definitions with exported interfaces
@@ -31,8 +33,8 @@ npm install plotly.js-basic-dist
 
 ### Peer Dependencies
 
-- `@angular/core`: ^18.0.0
-- `@angular/common`: ^18.0.0
+- `@angular/core`: >=18.0.0 (supports Angular 18, 19, 20+)
+- `@angular/common`: >=18.0.0
 - `react`: ^17.0.0
 - `react-dom`: ^17.0.0
 - `react-pivottable`: ^0.11.0
@@ -464,8 +466,10 @@ updateData() {
 ## Version Compatibility
 
 | Angular Version | React Version | react-pivottable | This Library |
-| --------------- | ------------- | ---------------- | ------------ |
-| 18.x            | 17.0.2        | 0.11.0           | 1.0.0-alpha  |
+|----------------|---------------|------------------|--------------||
+| 18.x, 19.x, 20+ | 17.0.2        | 0.11.0           | 1.0.0-alpha  |
+
+**Note:** This library is tested with Angular 18 but should work with Angular 19 and future versions as it uses only stable Angular APIs and standalone components.
 
 ## Known Limitations
 
@@ -480,8 +484,13 @@ updateData() {
 Works in all modern browsers that support:
 
 - ES2022
-- Angular 18
+- Angular 18 or above (18, 19, 20+)
 - React 17
+
+Tested with:
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
 
 ## License
 

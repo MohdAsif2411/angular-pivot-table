@@ -376,14 +376,16 @@ this.data = [...this.data, newItem];
 
 ---
 
-## Angular 18 Features Used
+## Angular 18+ Features Used
 
-1. ✅ **Standalone Components** - No NgModule needed
-2. ✅ **inject() function** - Modern dependency injection
-3. ✅ **ViewChild with type safety**
-4. ✅ **PLATFORM_ID injection** - SSR support
-5. ✅ **OnPush change detection**
-6. ✅ **Modern Angular patterns**
+1. ✅ **Standalone Components** - No NgModule needed (Angular 14+)
+2. ✅ **inject() function** - Modern dependency injection (Angular 14+)
+3. ✅ **ViewChild with type safety** - Available in all versions
+4. ✅ **PLATFORM_ID injection** - SSR support (Angular 4+)
+5. ✅ **OnPush change detection** - Available in all versions
+6. ✅ **Modern Angular patterns** - Compatible with Angular 18, 19, 20+
+
+**Note:** While the library uses features from various Angular versions, it requires Angular 18+ for optimal compatibility and testing.
 
 ---
 

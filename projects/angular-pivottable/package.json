@@ -1,7 +1,7 @@
 {
   "name": "@asif-dev/ng-pivottable",
   "version": "1.0.0-alpha.0",
-  "description": "Angular wrappers for react-pivottable (PivotTable and PivotTableUI) — React 17",
+  "description": "Angular 18+ wrapper components for react-pivottable (PivotTable and PivotTableUI) — React 17. Supports Angular 18, 19, and above.",
   "author": "Mohd Asif",
   "main": "bundles/angular-pivottable.umd.js",
   "module": "fesm2015/angular-pivottable.mjs",

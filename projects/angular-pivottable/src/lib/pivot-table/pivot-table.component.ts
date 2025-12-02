@@ -1,4 +1,5 @@
 // projects/angular-pivottable/src/lib/pivot-table/pivot-table.component.ts
+/// <reference path="../react-pivottable.d.ts" />
 import {
   Component,
   ElementRef,
@@ -20,8 +21,12 @@ import { isPlatformBrowser } from '@angular/common';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-// @ts-ignore
-import PivotTable from 'react-pivottable/PivotTable';
+// Handle both ESM and CommonJS exports from react-pivottable
+// When bundled as a library, the default export may be wrapped differently
+import * as PivotTableModule from 'react-pivottable/PivotTable';
+
+// Get the actual component - handles both { default: Component } and direct export
+const PivotTable = (PivotTableModule as any).default || PivotTableModule;
 
 import { PivotTableConfig } from '../types';
 

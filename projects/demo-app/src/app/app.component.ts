@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// NOTE: This import now uses dist files (via tsconfig path mapping)
+// The path 'angular-pivottable' resolves to './dist/angular-pivottable'
 import {
   NgPivotTableComponent,
   NgPivotTableUiComponent,
@@ -16,6 +18,12 @@ import {
 })
 export class AppComponent {
   title = 'Angular Pivot Table Demo';
+
+  constructor() {
+    console.log('🔍 Testing imports from DIST files');
+    console.log('NgPivotTableComponent:', NgPivotTableComponent);
+    console.log('NgPivotTableUiComponent:', NgPivotTableUiComponent);
+  }
 
   // Sample data - more comprehensive example
   data = [

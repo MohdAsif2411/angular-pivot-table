@@ -22,12 +22,23 @@ import { isPlatformBrowser } from '@angular/common';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-// Handle both ESM and CommonJS exports from react-pivottable
-// When bundled as a library, the default export may be wrapped differently
+// Import as namespace to get the module object
 import * as PivotTableUIModule from 'react-pivottable/PivotTableUI';
 
+// Create a wrapper that ensures we get the actual component
+const PivotTableUIImport = PivotTableUIModule as any;
+let PivotTableUI = PivotTableUIImport.default ||  PivotTableUIImport.PivotTableUI || PivotTableUIImport;
+
+// Verify it's a function (React component)
+if (typeof PivotTableUI !== 'function') {
+  // console.error('PivotTableUI resolved to:', PivotTableUI);
+  // console.error('Module keys:', Object.keys(PivotTableUIModule));
+  // throw new Error('PivotTableUI is not a function/component');
+  PivotTableUI = PivotTableUI.default;
+}
+
 // Get the actual component - handles both { default: Component } and direct export
-const PivotTableUI = (PivotTableUIModule as any).default || PivotTableUIModule;
+// const PivotTableUI = (PivotTableUIModule as any).default || PivotTableUIModule;
 
 import { PivotTableUIConfig } from '../types';
 
